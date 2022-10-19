@@ -34,6 +34,7 @@ img {
 h1,
 h2,
 h3,
+h4,
 p,
 ul {
   margin-top: 0;
@@ -351,6 +352,43 @@ ul {
   height: 20px;
   fill: currentColor;
 }
+/* Секція постійні клієнти */
+
+.clients h2 {
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.clients ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clients a {
+  display: block;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  padding: 16px 32px;
+
+  color: #afb1b8;
+}
+
+.clients a:hover,
+.clients a:focus {
+  color: var(--accent-text-color);
+  border-color: var(--accent-text-color);
+}
+
+.clients .link-icon {
+  width: 106px;
+  height: 60px;
+
+  fill: currentColor;
+}
 
 /* Сторінка Портфоліо/кнопки фільтру */
 
@@ -411,6 +449,7 @@ ul {
 .logo-footer {
   margin-right: 0;
 }
+
 /* Адреса у футері */
 
 .address {
@@ -430,7 +469,7 @@ ul {
   margin-bottom: 9px;
 }
 
-.address-list .map {
+.address-list .link-map {
   color: var(--primary-white-color);
 }
 
@@ -442,6 +481,7 @@ ul {
   background-color: var(--special-bg-color);
 }
 
+/* Загальні ховер та фокус на посилання */
 .link:hover,
 .link:focus {
   color: var(--accent-text-color);
