@@ -7,6 +7,7 @@
   --secondary-bg-color: #f5f4fa;
   --special-bg-color: #2f303a;
   --adress-link-color: rgba(255, 255, 255, 0.6);
+  --icon-color: #afb1b8;
   /* шрифти */
   --primary-font-family: 'Roboto';
   --secondary-font-family: 'Raleway';
@@ -238,15 +239,15 @@ ul {
   height: 120px;
   margin-bottom: 30px;
 
-  background-color: #f5f4fa;
+  background-color: var(--secondary-bg-color);
   border-radius: 4px;
 
   background-repeat: no-repeat;
   background-position: center;
 }
-.features-list .item:nth-child(1)::before {
+/* .features-list .item:nth-child(1)::before {
   background-image: url('../images/antenna.svg');
-}
+} */
 .features-list .item:nth-child(2)::before {
   background-image: url('../images/clock.svg');
 }
@@ -319,33 +320,24 @@ ul {
   margin-top: 16px;
   gap: 10px;
 }
-/* .team-card a {
-  display: block;
-  content: '';
-  width: 44px;
-  height: 44px;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 50%;
-} */
 
 .social-link-list a {
   display: block;
   width: 44px;
   height: 44px;
   padding: 12px;
-  color: #afb1b8;
+  color: var(--icon-color);
   border-radius: 50%;
 }
 
 .social-link-list a:hover,
 .social-link-list a:focus {
-  background-color: #2196f3;
+  background-color: var(--accent-text-color);
 }
 
 .social-link-list a:hover .link-icon,
 .social-link-list a:focus .link-icon {
-  color: #fff;
+  color: var(--primary-white-color);
 }
 
 .link-icon {
@@ -371,11 +363,12 @@ ul {
   display: block;
   width: 170px;
   height: 92px;
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--icon-color);
   border-radius: 4px;
   padding: 16px 32px;
+  text-align: center;
 
-  color: #afb1b8;
+  color: var(--icon-color);
 }
 
 .clients a:hover,
@@ -495,15 +488,10 @@ ul {
 }
 
 .join h2 {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
+  line-height: 1.14;
   text-transform: uppercase;
-
-  color: #ffffff;
+  color: var(--primary-white-color);
 }
 
 .join a {
