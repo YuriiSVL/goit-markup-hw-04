@@ -313,13 +313,13 @@ ul {
   justify-content: space-between;
   text-align: center;
 }
-.team-card ul {
+.social-link-list {
   display: flex;
   justify-content: center;
   margin-top: 16px;
   gap: 10px;
 }
-.team-card a {
+/* .team-card a {
   display: block;
   content: '';
   width: 44px;
@@ -327,7 +327,7 @@ ul {
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 50%;
-}
+} */
 
 .social-link-list a {
   display: block;
@@ -335,6 +335,7 @@ ul {
   height: 44px;
   padding: 12px;
   color: #afb1b8;
+  border-radius: 50%;
 }
 
 .social-link-list a:hover,
@@ -470,7 +471,50 @@ ul {
 }
 
 .address-list .link-map {
+  display: block;
+  min-width: 231px;
+
   color: var(--primary-white-color);
+}
+
+/* Блок Приєднуйтесь */
+
+.footer-flex {
+  display: flex;
+}
+
+.join {
+  padding-top: 10px;
+  padding-bottom: 40px;
+  margin-left: 70px;
+}
+
+.join .social-link-list {
+  justify-content: left;
+  margin-top: 20px;
+}
+
+.join h2 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.join a {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--primary-white-color);
+}
+
+/* Загальні ховер та фокус на посилання */
+.link:hover,
+.link:focus {
+  color: var(--accent-text-color);
 }
 
 /* Фони секцій */
@@ -481,11 +525,6 @@ ul {
   background-color: var(--special-bg-color);
 }
 
-/* Загальні ховер та фокус на посилання */
-.link:hover,
-.link:focus {
-  color: var(--accent-text-color);
-}
 /* Виділення поточної сторінки */
 .nav-list .current-page {
   color: var(--accent-text-color);
