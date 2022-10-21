@@ -162,6 +162,10 @@ ul {
 .hero {
   text-align: center;
   padding: 200px 0;
+  height: 600px;
+  max-width: 1600px;
+  margin: 0 auto;
+
   background-color: #c4c4c4;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url('../images/hero-bg-img.jpg');
@@ -232,7 +236,23 @@ ul {
 .features-list .item:not(:first-child) {
   margin-left: 30px;
 }
-.features-list .item::before {
+
+.features-icon-box {
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: var(--secondary-bg-color);
+  border-radius: 4px;
+}
+/* .features-icon-box svg {
+  width: 70px;
+  height: 70px;
+} */
+/* .features-list .item::before {
   content: '';
   display: block;
   width: 270px;
@@ -244,10 +264,10 @@ ul {
 
   background-repeat: no-repeat;
   background-position: center;
-}
+} */
 /* .features-list .item:nth-child(1)::before {
   background-image: url('../images/antenna.svg');
-} */
+}
 .features-list .item:nth-child(2)::before {
   background-image: url('../images/clock.svg');
 }
@@ -256,7 +276,7 @@ ul {
 }
 .features-list .item:nth-child(4)::before {
   background-image: url('../images/astronaut.svg');
-}
+} */
 
 /* Секція чим ми займаємося */
 .doing {
@@ -322,10 +342,11 @@ ul {
 }
 
 .social-link-list a {
-  display: block;
+  display: flex;
   width: 44px;
   height: 44px;
-  padding: 12px;
+  justify-content: center;
+  align-items: center;
   color: var(--icon-color);
   border-radius: 50%;
 }
@@ -341,8 +362,6 @@ ul {
 }
 
 .link-icon {
-  width: 20px;
-  height: 20px;
   fill: currentColor;
 }
 /* Секція постійні клієнти */
@@ -360,13 +379,13 @@ ul {
 }
 
 .clients a {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 170px;
   height: 92px;
   border: 1px solid var(--icon-color);
   border-radius: 4px;
-  padding: 16px 32px;
-  text-align: center;
 
   color: var(--icon-color);
 }
@@ -378,9 +397,6 @@ ul {
 }
 
 .clients .link-icon {
-  width: 106px;
-  height: 60px;
-
   fill: currentColor;
 }
 
@@ -408,6 +424,16 @@ ul {
 }
 
 /* Сторінка Портфоліо/наші роботи */
+.work-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+.work-link:hover,
+.work-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 
 .works {
   display: flex;
