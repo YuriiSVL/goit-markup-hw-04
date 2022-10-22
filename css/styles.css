@@ -162,7 +162,6 @@ ul {
 .hero {
   text-align: center;
   padding: 200px 0;
-  height: 600px;
   max-width: 1600px;
   margin: 0 auto;
 
@@ -338,7 +337,7 @@ ul {
   gap: 10px;
 }
 
-.social-link-list .social-link {
+.social-link {
   display: flex;
   width: 44px;
   height: 44px;
@@ -353,8 +352,8 @@ ul {
   background-color: var(--accent-text-color);
 }
 
-.social-link-list .social-link:hover .link-icon,
-.social-link-list .social-link:focus .link-icon {
+.social-link:hover .link-icon,
+.social-link:focus .link-icon {
   color: var(--primary-white-color);
 }
 
@@ -370,12 +369,12 @@ ul {
   text-align: center;
 }
 
-.clients ul {
+.clients .clients-link-list {
   display: flex;
   justify-content: space-between;
 }
 
-.clients .social-link {
+.clients .client-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -387,8 +386,8 @@ ul {
   color: var(--icon-color);
 }
 
-.clients .social-link:hover,
-.clients .social-link:focus {
+.clients .client-link:hover,
+.clients .client-link:focus {
   color: var(--accent-text-color);
   border-color: var(--accent-text-color);
 }
@@ -432,26 +431,26 @@ ul {
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.works {
+.works-list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
-.works h3 {
+.works-list h3 {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-text-color);
 }
-.works p {
+.works-list p {
   line-height: 1.88;
 }
-.work-card {
+.work-caption {
   border: 1px solid #eeeeee;
   padding: 20px 24px;
   border-top: none;
 }
-.work-card h3 {
+.work-caption h3 {
   margin-bottom: 4px;
 }
 
@@ -476,6 +475,10 @@ ul {
   line-height: 1.71;
 }
 
+.logo-adress-box {
+  min-width: 231px;
+}
+
 .address-list .link {
   color: var(--adress-link-color);
   font-style: normal;
@@ -488,8 +491,6 @@ ul {
 
 .address-list .link-map {
   display: block;
-  min-width: 231px;
-
   color: var(--primary-white-color);
 }
 
@@ -518,7 +519,7 @@ ul {
   color: var(--primary-white-color);
 }
 
-.join a {
+.join .social-link {
   background: rgba(255, 255, 255, 0.1);
   color: var(--primary-white-color);
 }
