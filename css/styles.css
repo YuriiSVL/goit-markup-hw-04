@@ -286,10 +286,10 @@ ul {
   line-height: 1.19;
 }
 
-.team-card {
+.team-caption {
   padding: 30px 15px;
 }
-.team .item {
+.team-list .item {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -394,14 +394,14 @@ ul {
 }
 
 /* Сторінка Портфоліо/наші роботи */
-.work-link {
+.work-link-card {
   display: block;
 
   text-decoration: none;
   color: inherit;
 }
-.work-link:hover,
-.work-link:focus {
+.work-link-card:hover,
+.work-link-card:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
