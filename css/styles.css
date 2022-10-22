@@ -16,10 +16,10 @@
 /* Загальні стилі */
 
 body {
-  background-color: var(--primary-white-color);
-  color: var(--primary-text-color);
   font-family: var(--primary-font-family), sans-serif;
   letter-spacing: 0.03em;
+  background-color: var(--primary-white-color);
+  color: var(--primary-text-color);
 }
 
 ul {
@@ -49,10 +49,10 @@ ul {
 .button {
   color: var(--title-text-color);
   background-color: var(--secondary-bg-color);
-  cursor: pointer;
+  text-align: center;
   font-family: inherit;
   letter-spacing: 0.03em;
-  text-align: center;
+  cursor: pointer;
 }
 .button:hover,
 .button:focus {
@@ -73,9 +73,9 @@ ul {
 
 /* Контейнер */
 .container {
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
   padding: 0 15px;
 }
 
@@ -101,10 +101,10 @@ ul {
   letter-spacing: 0.02em;
 }
 .contact-list .link {
-  color: var(--primary-text-color);
-
   display: flex;
   align-items: center;
+
+  color: var(--primary-text-color);
 }
 .contact-icon {
   fill: currentColor;
@@ -185,16 +185,16 @@ ul {
   text-transform: uppercase;
 }
 .hero .button {
+  padding: 10px 32px;
+  border-radius: 4px;
+
   color: var(--primary-white-color);
   background-color: var(--accent-text-color);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: none;
-  border-radius: 4px;
-  padding: 10px 32px;
 }
 .hero .button:focus,
 .hero .button:hover {
@@ -247,35 +247,6 @@ ul {
   background: var(--secondary-bg-color);
   border-radius: 4px;
 }
-/* .features-icon-box svg {
-  width: 70px;
-  height: 70px;
-} */
-/* .features-list .item::before {
-  content: '';
-  display: block;
-  width: 270px;
-  height: 120px;
-  margin-bottom: 30px;
-
-  background-color: var(--secondary-bg-color);
-  border-radius: 4px;
-
-  background-repeat: no-repeat;
-  background-position: center;
-} */
-/* .features-list .item:nth-child(1)::before {
-  background-image: url('../images/antenna.svg');
-}
-.features-list .item:nth-child(2)::before {
-  background-image: url('../images/clock.svg');
-}
-.features-list .item:nth-child(3)::before {
-  background-image: url('../images/diagram.svg');
-}
-.features-list .item:nth-child(4)::before {
-  background-image: url('../images/astronaut.svg');
-} */
 
 /* Секція чим ми займаємося */
 .doing {
@@ -343,8 +314,9 @@ ul {
   height: 44px;
   justify-content: center;
   align-items: center;
-  color: var(--icon-color);
   border-radius: 50%;
+
+  color: var(--icon-color);
 }
 
 .social-link-list .social-link:hover,
@@ -364,6 +336,7 @@ ul {
 
 .clients h2 {
   margin-bottom: 50px;
+
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -400,8 +373,8 @@ ul {
 
 .filter-btn-list {
   display: flex;
-  margin-bottom: 50px;
   justify-content: center;
+  margin-bottom: 50px;
 }
 .filter-btn-list li + li {
   margin-left: 8px;
@@ -411,10 +384,11 @@ ul {
 }
 
 .btn-filter {
+  padding: 6px 22px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  padding: 6px 22px;
   border: none;
   border-radius: 4px;
 }
@@ -422,6 +396,7 @@ ul {
 /* Сторінка Портфоліо/наші роботи */
 .work-link {
   display: block;
+
   text-decoration: none;
   color: inherit;
 }
@@ -446,8 +421,8 @@ ul {
   line-height: 1.88;
 }
 .work-caption {
-  border: 1px solid #eeeeee;
   padding: 20px 24px;
+  border: 1px solid #eeeeee;
   border-top: none;
 }
 .work-caption h3 {
