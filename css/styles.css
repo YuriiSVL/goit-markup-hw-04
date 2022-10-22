@@ -230,7 +230,7 @@ ul {
 }
 
 .features-list .item {
-  flex-basis: calc(100% / 4);
+  flex-basis: calc((100% - 30px * 3) / 4);
 }
 
 .features-list .item:not(:first-child) {
@@ -315,9 +315,9 @@ ul {
 .team p {
   line-height: 1.19;
 }
-.team a {
+/* .team a {
   display: block;
-}
+} */
 
 .team-card {
   padding: 30px 15px;
