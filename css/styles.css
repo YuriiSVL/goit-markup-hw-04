@@ -315,9 +315,6 @@ ul {
 .team p {
   line-height: 1.19;
 }
-/* .team a {
-  display: block;
-} */
 
 .team-card {
   padding: 30px 15px;
@@ -341,7 +338,7 @@ ul {
   gap: 10px;
 }
 
-.social-link-list a {
+.social-link-list .social-link {
   display: flex;
   width: 44px;
   height: 44px;
@@ -351,13 +348,13 @@ ul {
   border-radius: 50%;
 }
 
-.social-link-list a:hover,
-.social-link-list a:focus {
+.social-link-list .social-link:hover,
+.social-link-list .social-link:focus {
   background-color: var(--accent-text-color);
 }
 
-.social-link-list a:hover .link-icon,
-.social-link-list a:focus .link-icon {
+.social-link-list .social-link:hover .link-icon,
+.social-link-list .social-link:focus .link-icon {
   color: var(--primary-white-color);
 }
 
@@ -378,7 +375,7 @@ ul {
   justify-content: space-between;
 }
 
-.clients a {
+.clients .social-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -390,8 +387,8 @@ ul {
   color: var(--icon-color);
 }
 
-.clients a:hover,
-.clients a:focus {
+.clients .social-link:hover,
+.clients .social-link:focus {
   color: var(--accent-text-color);
   border-color: var(--accent-text-color);
 }
@@ -498,7 +495,7 @@ ul {
 
 /* Блок Приєднуйтесь */
 
-.footer-flex {
+.flex-wrapper {
   display: flex;
 }
 
