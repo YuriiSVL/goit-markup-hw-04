@@ -498,10 +498,11 @@ ul {
 .flex-wrapper {
   display: flex;
 }
+.container.flex-wrapper {
+  align-items: baseline;
+}
 
 .join {
-  padding-top: 10px;
-  padding-bottom: 40px;
   margin-left: 70px;
 }
 
